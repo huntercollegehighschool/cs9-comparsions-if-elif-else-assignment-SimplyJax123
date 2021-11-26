@@ -6,17 +6,20 @@ Write a program that asks the user to input one integer. The program will then p
 
 3 examples of what should appear on the console when the program runs (note: the test driver is case sensitive):
 
-Enter a number:  -2
-negative
-not divisible by 3
-
-Enter a number:  0
-zero
-divisible by 3
-
-Enter a number:  5
-positive
-not divisible by 3
 '''
 
-#write your code below
+number1 = int(input("Enter a number: "))
+
+#first string
+if number1 > 0:
+  print("positive")
+elif number1 < 0:
+  print("negative")
+elif number1 == 0:
+  print("zero")
+
+#second string
+if number1 % 3 == 0:
+  print("divisible by 3")
+else:
+  print("not divisible by 3")
