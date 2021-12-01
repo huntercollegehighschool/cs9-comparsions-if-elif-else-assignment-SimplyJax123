@@ -13,9 +13,9 @@ Four examples of what should appear on the console when the program runs (note: 
 
 month = str(input("Enter a month: "))
 
-if month == "September" or "April" or "June" or "November":
+if month == "September" or month == "April" or month == "June" or month == "November":
   print("There are 30 Days in this month")
-elif month == "January" or "March" or "May" or "July" or "August" or "December":
+elif month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "December":
   print("There are 31 Days in this month")
 elif month == "February":
   print("There are 28 or 29 Days in this month")
